@@ -128,3 +128,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+# Database
+DATABASE_CONFIG = {
+    'HOST': config.get('HOST'),
+    'USER': config.get('USER'),
+    'PASSWORD': config.get('PASSWORD'),
+    'DATABASE': config.get('DATABASE'),
+    'PORT': config.get('PORT')
+}
