@@ -15,6 +15,24 @@ Including another URLconf
 """
 from django.urls import path
 
-urlpatterns = [
+from . import views
 
+urlpatterns = [
+    path('get_students', views.get_students),
+    path('add_student', views.add_student),
+    path('delete_student', views.delete_student),
+    path('edit_student', views.edit_student),
+    path('search_student', views.search_student),
+
+    path('get_courses', views.get_courses),
+    path('add_course', views.add_course),
+    path('delete_course', views.delete_course),
+    path('edit_course', views.edit_course),
+    path('search_course', views.search_course),
+
+    path('get_sc', views.get_sc),
+    path('add_sc', views.add_sc),
+    path('delete_sc', views.delete_sc),
+    path('edit_sc', views.edit_sc),
+    path('search_sc', views.search_sc),
 ]
